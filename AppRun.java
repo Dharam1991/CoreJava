@@ -2,7 +2,7 @@ package com.vs.interview.java8;
 
 /**
  * @created 27/02/2020 -10:06 PM
- * @vishabsingh
+ * @Dharam
  **/
 public class AppRun {
     public static void main(String[] args) {
@@ -13,7 +13,6 @@ public class AppRun {
         Vertex<String> vertex3 = new Vertex<>("D");
         Vertex<String> vertex4 = new Vertex<>("E");
         Vertex<String> vertex5 = new Vertex<>("F");
-
         root.setNeighbours(vertex2);
         root.setNeighbours(vertex5);
         vertex4.setNeighbours(vertex5);
@@ -22,5 +21,6 @@ public class AppRun {
         vertex2.setNeighbours(vertex1);
         bfs.bfs(root);
         bfs.BFSStream(root);
+
     }
 }
